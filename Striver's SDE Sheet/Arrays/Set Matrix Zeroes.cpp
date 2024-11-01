@@ -1,7 +1,8 @@
 //Optimal Approach
 //(1) Use an additional row array and column array. Set all elements are zero. Mark them as 1 if you encounter a zero in the same array in the matrix. 
 //(2) Then reiterate the matrix and wherever there is a one in the row array and column array mark that position as 0 in the given matrix.
-
+// TC = O(n^2)
+// SC = O(n+m)
 class Solution {
 public:
     void setZeroes(vector<vector<int>>& matrix) {
