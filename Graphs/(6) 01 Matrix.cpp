@@ -43,6 +43,7 @@ public:
         return ans;
     }
 };
+//NOTE: I am not checking how far another zero is from me. First I mark all zeroes as visited and their nearest distance as 0(since it is a zero.) Then I check how far the non zeroes are from me.
 
 
 //Approach
