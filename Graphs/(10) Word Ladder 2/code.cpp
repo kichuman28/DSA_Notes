@@ -49,6 +49,8 @@ public:
     }
 };
 
+//NOTE: Time complexity cannot be calculated, next to impossible as it varies from example to example. Also this doesnt work on leetcode. Tell it to the interviewer.
+
 
 //What does the question want us to do? Basically you need to return an array of array of all the combinations you took to transform from the startWord to the endWord by storing it in an array. 
 
