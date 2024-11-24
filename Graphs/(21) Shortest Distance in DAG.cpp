@@ -95,7 +95,7 @@ class Solution {
 //Step 3: Now we mark the distance for the source node as 0, as the distance from source node to 
 //itself is always zero, commmon sense. 
 //Step 4: Now starting from the source node (the source node will always be the first node in the 
-//topo sort linear ordering), we start taking the adjacent nodes from the adj matrix.
+//topo sort linear ordering), we start taking the adjacent nodes from the adj graph.
 //Step 5: We compare the weight of the adjacent node by adding it with it's weight from the 
 //adj graph AND the weight of the main node (dist[node] + wt). dist[node] just tells us the 
 //total distance from the source node for that main node. We add it with the distance to the adjacent
