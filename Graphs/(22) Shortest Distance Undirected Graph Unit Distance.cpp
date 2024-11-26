@@ -14,8 +14,6 @@ class Solution {
         queue<int> q; //Pushing the starting node into the queue.
         q.push(src);
         
-        vector<int> vis(N, 0); //Marking the starting node as visited.
-        vis[src] = 1;
         
         vector<int> dist(N, INT_MAX);
         dist[src] = 0;          //Mark the dist of the source node as 0.
@@ -25,12 +23,9 @@ class Solution {
             q.pop();
             
             for(auto it : adj[node]){
-                if(!vis[it]){
-                    vis[it] = 1;
-                    if(dist[node] + 1 < dist[it]){
-                        dist[it] = dist[node] + 1;
-                        q.push(it);
-                    }
+                if(dist[node] + 1 < dist[it]){
+                    dist[it] = dist[node] + 1;
+                    q.push(it);
                 }
             }
         }
@@ -70,3 +65,5 @@ class Solution {
 //numbers it is going level by level. So we know each level will get incremented by a distance of 
 //only 1. It's common sense to be honest. TC is same as BFS = O(V + 2E) 2E because it is an 
 //undirected graph.
+
+//NOTE: We don't need a visited array in this case as the checking is already done before it's pushed in the queue(whether a smallest distance is found or not). 
