@@ -1,0 +1,9 @@
+1) Why is a priority queue used instead of a queue even when both return the same result?
+=> The whole point of using a priority queue is to take the minimal node first. If we are using a queue we might come across a node
+with a minimal distance and a maximum distance. So if we use a queue, it will take the maximum distance first and then check with the
+adjacent nodes (assuming the maximum node comes first), only for it to be replaced by the same node with the minimum distance later on.
+If we use a priority queue then it'll take the minimum distance one first and then only it will go for the maximum one. Since we found
+a minimum distance one it will not act further with the node which has maximum distance. Refer image for example. 
+
+2) Why is the TC = O(E log V)?
+=> Just refer the video man.
