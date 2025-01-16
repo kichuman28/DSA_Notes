@@ -45,5 +45,6 @@ public:
 //First I need to check whether the freq is >= 3. Done.
 //Next I need to reduce it until there are no 3 freq left. For even freq, example 4, I can reduce it till 2. 
 //For odd freq, example 5, I can reduce it till 1 if I keep on subtracting 2 from it. 
-//So I can just add the remaining freq and that's the answer.
-//
+//Thing is here I don't need to subtract till it's 2 or 1. I know if it's even then the final freq is 2 
+//and if it's odd the final freq is 1. So just check if they are even or odd and add 2 or 1.
+//For the numbers whose freq < 3, just add their freq to the answer. 
