@@ -1,0 +1,29 @@
+Right Shift.
+One thing to note is that after doing the right shift of a number, inorder to calculate it we don't have to 
+do it manually. We can calculate it using a formula. 
+If we are shifting 13 by 2 bits to the right, then it is represented as 13 >> 2.
+In order to find the value we can do (13 / 2^k), where k is the number of bits we are shifting to. 
+
+How are negative numbers stored in computers?
+=> So for int datatype, 32 bits are reserved for it. The last bit is reserved for the sign. If it is 0 then
+the number is positive, if it is 1 then it means it is negative. So in order for a number to be negative, 
+we somehow have to make that last bit as 1. How can we do this? By performing the 2S complement of the number. So it flips every number from 0 to 1, and then adds a 1 to it. Since 0 represents positive after flipping it we get 1 which shows it as negative. 
+
+
+Left Shift.
+One thing to note is that after doing the left shift of a number, inorder to calculate it we don't have to 
+do it manually. We can calculate it using a formula. 
+If we are shifting 13 by 2 bits to the left, then it is represented as 13 << 2.
+In order to find the value we can do (13 * 2^k), where k is the number of bits we are shifting to. 
+
+NOT operator.
+=> NOT is basically this : ~
+It just flips 0 to 1 and 1 to 0. It works in 2 steps.
+1) It will flips everything.
+2) It will check if it is negative or not. 
+    2.1) If yes then it performs 2s complement on it
+    2.2) If no then it leaves it as it.
+
+Try it with an example. 
+
+NOTE: Whenever we are dealing with negative numbers we should always perform 2s complement on the positive number and then and THEN ONLY you do what you want with it. 
